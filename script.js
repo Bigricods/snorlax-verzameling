@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Voorbeeld: twee handmatig ingevulde kaarten en 98 placeholders (totaal 100)
     const cards = [];
-    
+
     // Voeg handmatig ingevulde kaarten toe
     cards.push({
         naam: "Snorlax VMAX",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         prijs: "€15.00",
         afbeelding: "https://images.pokemontcg.io/smp/SM05.png"
     });
-    
+
     // Voeg de overige kaarten toe als placeholders (totale aantal = 100)
     for (let i = cards.length; i < 100; i++) {
         cards.push({
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             afbeelding: "Vul URL in"
         });
     }
-    
+
     const container = document.getElementById("card-container");
 
     // Genereer per kaart een div met een checkbox
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <p>Kaartnummer: ${card.nummer}</p>
             <p>Prijs: ${card.prijs}</p>
         `;
-        
+
         container.appendChild(cardElement);
     });
 });
